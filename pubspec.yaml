@@ -29,7 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   hive: 
-  hive_flutter: 
+  hive_flutter:  
   flutter:
     sdk: flutter
 
@@ -40,7 +40,7 @@ dependencies:
 
 dev_dependencies:
   hive_generator: 
-  build_runner:
+  build_runner: 
   flutter_test:
     sdk: flutter
 
