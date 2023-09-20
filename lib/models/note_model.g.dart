@@ -1,8 +1,15 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 part of 'note_model.dart';
+
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
 
 class NoteModelAdapter extends TypeAdapter<NoteModel> {
   @override
   final int typeId = 0;
+
   @override
   NoteModel read(BinaryReader reader) {
     final numOfFields = reader.readByte();
@@ -31,13 +38,13 @@ class NoteModelAdapter extends TypeAdapter<NoteModel> {
       ..write(obj.color);
   }
 
-  // @override
-  // int get hashCode => typeId.hashCode;
+  @override
+  int get hashCode => typeId.hashCode;
 
-  // @override
-  // bool operator ==(Object other) =>
-  //     indentical (this, other) ||
-  //     other is NoteModelAdapter &&
-  //         runtimeType == other.runtimeType &&
-  //         typeId == other.typeId;
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is NoteModelAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
 }
