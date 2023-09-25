@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:noteapp/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:noteapp/models/note_model.dart';
 
+import 'colors_list_view.dart';
 import 'custom_button.dart';
 import 'custom_text_field.dart';
 
@@ -48,7 +49,11 @@ class _AddNoteFormState extends State<AddNoteForm> {
             maxLines: 5,
           ),
           const SizedBox(
-            height: 40,
+            height: 25,
+          ),
+          const ColorListView(),
+          const SizedBox(
+            height: 25,
           ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
@@ -76,17 +81,6 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class ColorList extends StatelessWidget {
-  const ColorList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const CircleAvatar(
-      backgroundColor: Colors.blue,
     );
   }
 }
