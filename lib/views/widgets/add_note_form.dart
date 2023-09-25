@@ -79,3 +79,14 @@ class _AddNoteFormState extends State<AddNoteForm> {
     );
   }
 }
+
+class ColorList extends StatelessWidget {
+  const ColorList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const CircleAvatar(
+      backgroundColor: Colors.blue,
+    );
+  }
+}

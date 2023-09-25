@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:noteapp/cubits/notes_cubit/notes_cubit.dart';
 import 'package:noteapp/models/note_model.dart';
-import 'package:noteapp/views/widgets/edit_note_view_body.dart';
+import '../edit_note_view.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key, required this.note});
@@ -10,9 +10,11 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onDoubleTap: () {
+      onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return const EditNoteViewBody();
+          return EditNoteView(
+            note: note,
+          );
         }));
       },
       child: Container(
